@@ -1,0 +1,88 @@
+@import "mixin";
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $cl-main;
+  line-height: 1.75;
+  font-weight: 400;
+  background-color: $cl-bg;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.btn {
+  background-color: $cl-white;
+  color: $cl-red;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid $cl-border;
+  font-size: 16px;
+  line-height: 1.5;
+  z-index: 1;
+  font-weight: bold;
+  padding: 9px 20px 7px;
+
+  &:before {
+    border-radius: 5px;
+    border: 2px solid $cl-border;
+    bottom: 3px;
+    content: "";
+    display: block;
+    left: 3px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+  }
+
+  &.btn-primary{
+    color: $cl-white;
+    border-color: $cl-red;
+    background-color: $cl-red;
+
+
+    &:before{
+      border-color: $cl-border-red;
+    }
+  }
+
+  &:hover {
+    outline: 0;
+    color: $cl-red;
+    background-color: #fafaf7;
+
+    &.btn-primary{
+      &:hover {
+        color: $cl-white;
+        border-color: $cl-red;
+        background-color: $cl-red-dark;
+      }
+    }
+  }
+
+
+}
+
+
+
+.mt- {
+  margin-top: 10px;
+}
+
+.mb- {
+  margin-bottom: 10px;
+}
+
+.text-red{
+  color: $cl-red
+}
+
+inut[type=email] {
+  border-radius: 5px;
+  border: 1px solid #d2ceca;
+  box-shadow: inset 1px 1px 2px rgba(210, 206, 202, .1);
+}

@@ -1,0 +1,134 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+
+:host {
+  font-size: 14px;
+  padding: 0;
+  border-top: 1px solid $cl-border;
+  display: block;
+  background: $cl-white;
+
+  .border-top {
+    border-color: $cl-border !important;
+    margin: 20px 0 8px 0;
+  }
+
+  .pt {
+    padding-top: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.75;
+  }
+
+  a {
+    text-decoration: none;
+    color: $cl-main;
+
+    &:hover {
+      color: $cl-red;
+    }
+  }
+
+  .layout-1 {
+    padding: 20px 0 0;
+    font-size: 16px;
+
+    .icon {
+      line-height: 1.5;
+    }
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding-left: 25px;
+
+      i {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: inline-block;
+        width: 20px;
+        line-height: 20px;
+      }
+
+      .fa-phone {
+        font-size: 14px;
+      }
+
+      span {
+        display: block;
+        font-size: 12px;
+        font-style: italic;
+        color: $cl-gray;
+      }
+    }
+  }
+
+  .layout-3 {
+    padding-top: 10px;
+
+    .social {
+      a {
+        text-align: center;
+        display: inline-block;
+        margin-left: 10px;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        background-color: $cl-gray-bg;
+        color: $cl-white;
+        font-size: 14px;
+        border-radius: 3px;
+
+        &:hover {
+          &.facebook {
+            background-color: #3b5999;
+          }
+
+          &.twitter {
+            background-color: #55acee;
+          }
+
+          &.instagram {
+            background-color: #e4405f;
+          }
+
+          &.youtube {
+            background-color: #cd201f;
+          }
+
+          &.linkedin {
+            background-color: #0077b5;
+          }
+        }
+      }
+    }
+
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+
+  ul {
+    li {
+      line-height: 28px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .copyright {
+    padding: 10px 0 20px;
+
+    span {
+      display: inline-block;
+      font-size: 12px;
+      margin-right: 20px;
+    }
+  }
+}
